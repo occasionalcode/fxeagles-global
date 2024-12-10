@@ -52,11 +52,11 @@ export default function Questions() {
           {questions.map((question, i) => (
             <div
               key={i}
-              className="  backdrop-blur-3xl text-white border-[#FEBB5B] border-2  sm:h-56 rounded-xl px-4 pt-4 pb-8 "
+              className="  backdrop-blur-3xl text-white border-[#FEBB5B] border-2  sm:h-56 lg:h-44  rounded-xl px-4 pt-4 pb-8 lg:text-lg"
             >
               <div className="flex justify-start items-center gap-4 pb-4">
                 <div className="rounded-full size-8  bg-white "></div>
-                <div>{question.name}</div>
+                <p>{question.name}</p>
               </div>
               <p>{question.messege}</p>
             </div>
@@ -68,7 +68,7 @@ export default function Questions() {
           className="absolute z-0 top-0 w-full h-56 object-cover  opacity-15"
         /> */}
       </div>
-      <div className=" relative flex flex-col justify-center text-center items-center  ">
+      <div className=" relative flex flex-col justify-center text-center items-center  py-14">
         <div className="absolute bottom-0 w-full h-[40rem] z-10 bg-gradient-to-t from-[#0D101D] to-transparent from-20%  to-100%"></div>
         <div className="z-10 pt-16 pb-5 flex flex-col lg:flex-row lg:justify-center lg:items-end lg:gap-6">
           <p
@@ -95,7 +95,8 @@ export default function Questions() {
       <Image
         src={grain}
         alt="grain"
-        className="absolute top-0 size-full object-cover z-0 opacity-5"
+        className="absolute top-0 size-full object-cover z-0 opacity-[0.03]"
+        quality={100}
       />
     </div>
   );
