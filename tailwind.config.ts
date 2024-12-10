@@ -21,6 +21,10 @@ export default {
       "2xl": "1536px",
     },
     extend: {
+      gridTemplateColumns: {
+        "auto-fill-250": "repeat(auto-fill, minmax(250px, 1fr))",
+        "auto-fill-300": "repeat(auto-fill, minmax(400px, 1fr))",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -48,11 +48,11 @@ export default function Questions() {
       </h2>
 
       <div className="relative w-full pt-10">
-        <div className="w-full flex flex-wrap gap-5 pt-5 px-5 justify-around items-start ">
+        <div className="w-full grid co grid-cols-auto-fill-250 lg:grid-cols-auto-fill-300 gap-6 justify-around items-start px-8">
           {questions.map((question, i) => (
             <div
               key={i}
-              className="flex flex-col  backdrop-blur-3xl text-white border-[#FEBB5B] border-2 w-96 sm:w-64 md:w-80 lg:w-[28rem] rounded-xl px-4 pt-4 pb-8 "
+              className="  backdrop-blur-3xl text-white border-[#FEBB5B] border-2  sm:h-56 rounded-xl px-4 pt-4 pb-8 "
             >
               <div className="flex justify-start items-center gap-4 pb-4">
                 <div className="rounded-full size-8  bg-white "></div>
